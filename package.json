@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "docker compose down -v && docker compose build && docker compose up"
+    "start": "docker compose down -v && docker compose build && docker compose up -d"
   },
   "devDependencies": {
     "@types/node": "^26.1.1"

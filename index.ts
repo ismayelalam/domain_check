@@ -117,13 +117,13 @@ async function findAvailableDomainsFast() {
         console.log(domain);
       }
     } catch (e: any) {
-      await saveError(domain, `${e}`);
+      saveError(domain, `${e}`);
     }
 
     // Save progress after every domain
-    await saveLastIndex(i + 1);
+    saveLastIndex(i + 1);
 
-    await sleep(1000);
+    sleep(1000);
   }
 
   console.log('Done');
