@@ -1,7 +1,7 @@
-FROM node:22-slim
+FROM node:24-slim
 
 WORKDIR /app
 
 COPY . .
 
-CMD ["node", "index.js"]
+CMD ["node", "index.ts"]

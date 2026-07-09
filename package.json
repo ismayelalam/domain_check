@@ -1,0 +1,13 @@
+{
+  "name": "domain_check",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "docker compose down -v && docker compose build && docker compose up"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1"
+  }
+}
